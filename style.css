@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #f8a202;
+    padding: 25px;
+    max-width: 760px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 10px;
+    color: #6302ff;
+}
+
+.new-task-container {
+    text-align: center;
+}
+
+.box {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: rgb(235, 233, 233);
+    margin: 15px 0;
+}
+
+.todo-list {
+    float: left;
+    width: 46%;
+}
+
+.complete-list {
+    float: right;
+    width: 46%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px dotted #CCC;
+}
+
+.delete {
+    float: right;
+}
