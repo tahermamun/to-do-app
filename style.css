@@ -25,6 +25,7 @@ h2 {
     text-align: center;
     padding: 0 0 10px;
     color: #6302ff;
+    border-bottom: 1px solid #0c0d42;
 }
 
 .new-task-container {
