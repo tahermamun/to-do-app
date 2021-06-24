@@ -4,44 +4,84 @@
     box-sizing: border-box;
 }
 
-.container {
-    background: #f8a202;
-    padding: 25px;
-    max-width: 760px;
-    margin: 25px auto;
+.main-container {
+    background: linear-gradient(150deg, #ea87aa, #a296f2);
+    height: 100vh;
+    display: grid;
+}
+
+.section-container {
+    background: linear-gradient(00deg, #45398f, #5d46af);
+    padding: 25px 0;
+    width: 760px;
+    margin: auto;
     overflow: hidden;
     border-radius: 10px;
     font-family: sans-serif;
+    color: #fff;
 }
 
-h1, h2 {
-    margin: 0;
+h2, .app-title {
+    margin: 0 0 20px 0px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
+}
+
+.task-container {
+    padding: 20px;
 }
 
 h2 {
     font-size: 20px;
     text-align: center;
+    border-bottom: 1px solid #493a8e;
     padding: 0 0 10px;
-    color: #6302ff;
-    border-bottom: 1px solid #0c0d42;
+    color: #57635c;
+}
+
+button {
+    background: #ff4954;
+    outline: none;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 400;
+    color: #FFF;
+    /* text-transform: uppercase; */
+}
+
+.addTask-btn {
+    border-radius: 0px 40px 40px 0px;
+    margin-left: -5px;
 }
 
 .new-task-container {
     text-align: center;
+    background: #493a8e;
+    padding: 15px;
+}
+
+.add-new-task {
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .box {
     padding: 10px 15px;
     border-radius: 5px;
-    background: rgb(235, 233, 233);
+    background: #FFF;
     margin: 15px 0;
 }
 
 .todo-list {
     float: left;
     width: 46%;
+}
+
+.todo-list {
+    color: rgb(0, 0, 0);
 }
 
 .complete-list {
@@ -57,9 +97,24 @@ ul {
 
 li {
     padding: 10px;
-    border-bottom: 1px dotted #CCC;
+    border-bottom: 1;
+    color: rgb(0, 0, 0);
 }
 
 .delete {
     float: right;
+}
+
+#incomplete-task label {
+    padding-left: 10px;
+}
+
+input {
+    border: none;
+    padding: 5px;
+    border-radius: 40px 0px 0px 40px;
+    outline: none;
+}
+.add-new-task-input{
+width: 250px;
 }

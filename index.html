@@ -12,44 +12,46 @@
 </head>
 
 <body>
-    <section class="container">
+    <main class=' main-container'>
+        <section class="section-container">
 
-        <h1>To-Do App</h1>
+            <h1 class='app-title'>To-Do App</h1>
 
-        <div class="new-task-container box">
+            <div class="new-task-container boxx">
 
-            <label for="new-task">Add New Task</label>
-            <input type="text" id="new-task" class=''>
-            <button id="addTask" class='btn btn-primary'>Add Task</button>
-        </div>
-        <div class="todo-list box">
+                <label class='add-new-task' for="new-task">Add New Task</label>
+                <input class='add-new-task-input' type="text" id="new-task">
+                <button id="addTask" class='addTask-btn'>Add Task</button>
 
-            <h2>Incomplete Tasks</h2>
-            <ul>
-                <li><input type="checkbox"><label>Task Name</lable>
-                </li>
-                <li><input type="checkbox"><label>Task Name</lable>
-                </li>
-                <li><input type="checkbox"><label>Task Name</lable>
-                </li>
-            </ul>
+            </div>
 
-        </div>
-        <!--/todo-list-->
+            <div class='task-container'>
+                <div class="todo-list box">
+                    <h2>Incomplete Tasks</h2>
+                    <ul id='incomplete-task'>
+                        <li><input type="checkbox"><label>Task Name</lable>
+                        </li>
+                        <li><input type="checkbox"><label>Task Name</lable>
+                        </li>
+                        <li><input type="checkbox"><label>Task Name</lable>
+                        </li>
+                    </ul>
 
-        <div class="complete-list box">
+                </div>
+                <!--/todo-list-->
 
-            <h2>Completed Tasks</h2>
-            <ul>
-                <li>Task Name <button class="delete btn btn-danger">Delete</button></li>
+                <div class="complete-list box">
 
-            </ul>
-
-
-        </div>
-        <!--/complete-list-->
-    </section>
-    <!--/container-->
+                    <h2>Completed Tasks</h2>
+                    <ul id="complete-task">
+                        <li>Task Name <button class="delete">Delete</button></li>
+                    </ul>
+                </div>
+                <!--/complete-list-->
+            </div>
+        </section>
+        <!--/container-->
+    </main>
 
     <script src="./index.js"></script>
 </body>
