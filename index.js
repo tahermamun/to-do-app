@@ -17,11 +17,14 @@ function createNewTask(task) {
 };
 
 function addTask() {
-  let listItem = createNewTask(newTask.value);
-  incompleteTaskList.appendChild(listItem);
-  newTask.value = "";
-  incompleteItems(listItem, completeTask);
-
+  if (newTask.value) {
+    let listItem = createNewTask(newTask.value);
+    incompleteTaskList.appendChild(listItem);
+    newTask.value = "";
+    incompleteItems(listItem, completeTask);
+  } else {
+    alert('Write Something')
+  }
 };
 
 function completeTask() {
@@ -69,28 +72,3 @@ for (var i = 0; i < completeTaskList.children.length; i++) {
 
 addTaskBtn.addEventListener("click", addTask);
 
-
-
-
-
-
-
-
-
-
-// let tasks = document.getElementById('all-task')
-// document.getElementById('addTask').addEventListener('click', function () {
-//     let newTask = document.getElementById('new-task').value
-//     let taskItem = document.createElement('li')
-//     let checkBox = document.createElement('input')
-//     let label = document.createElement('label')
-//     taskItem.id = 'task-item'
-//     checkBox.type = 'checkbox'
-
-//     label.innerText = newTask
-//     taskItem.appendChild(checkBox)
-//     taskItem.appendChild(label)
-//     tasks.appendChild(taskItem)
-
-
-// })
